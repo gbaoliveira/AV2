@@ -5,21 +5,21 @@ import { Link } from "expo-router";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/icon.png')} />
+      <Image style={{height: 150, width: 150}} source={require('../assets/icon.png')} />
       <Text style={styles.titulo}>Doguinho</Text>
       <Link style={{marginTop: 15, fontSize: 15, color: 'blue'}} href="/cadastro">Ir para o Cadastro</Link>
     <View style={styles.imagens}>
       <View style={styles.item}>
-        <Image source={require('../assets/img1.png')} />
-        <Image source={require('../assets/img2.png')} />  
-        <Image source={require('../assets/img3.png')} />
-        <Image source={require('../assets/img4.png')} />
+        <Image style={{height: 150, width: 150}} source={require('../assets/img1.png')} />
+        <Image style={{height: 150, width: 150}} source={require('../assets/img2.png')} />  
+        <Image style={{height: 150, width: 150}} source={require('../assets/img3.png')} />
+        <Image style={{height: 150, width: 150}} source={require('../assets/img4.png')} />
       </View>
       <View style={styles.item}>
-         <Image source={require('../assets/img5.png')} />
-        <Image source={require('../assets/img6.png')} />
-        <Image source={require('../assets/img7.png')} />
-        <Image source={require('../assets/img8.png')} />
+         <Image style={{height: 150, width: 150}} source={require('../assets/img5.png')} />
+        <Image style={{height: 150, width: 150}} source={require('../assets/img6.png')} />
+        <Image style={{height: 150, width: 150}} source={require('../assets/img7.png')} />
+        <Image style={{height: 150, width: 150}} source={require('../assets/img8.png')} />
       </View>
     </View>
     </View>
@@ -50,8 +50,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     alignItems: 'flex-start' 
-  },
-  item: {
-    width: '50%'
   },
 });
